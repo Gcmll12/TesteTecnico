@@ -55,7 +55,7 @@
     "Parameters": [
       {
         "Name": "NumeroProcesso",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -81,7 +81,7 @@
     "Parameters": [
       {
         "Name": "NumeroProcesso",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": true
       },
       {
@@ -112,7 +112,7 @@
     "Parameters": [
       {
         "Name": "NumeroProcesso",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

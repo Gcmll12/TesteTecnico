@@ -9,13 +9,14 @@ namespace GestorProcessos.Models
 
         [Key]
         public int Id { get; set; }
-        public  required int NumeroProcesso { get; set; }
+
+        public  required string NumeroProcesso { get; set; }
         
         public required string Autor { get; set; }
        
         public required string Reu { get; set; }
         
-        public DateOnly DataCadastro { get; set; }
+        public required DateOnly DataCadastro { get; set; }
 
 
 

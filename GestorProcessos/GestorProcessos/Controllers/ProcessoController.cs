@@ -24,6 +24,10 @@ namespace GestorProcessos.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Processos>>> GetProcessos()
         {
+            if (_context.Processos == null)
+            {
+                return NotFound();
+            }
 
             return await _context.Processos.ToListAsync();
         }
@@ -31,17 +35,38 @@ namespace GestorProcessos.Controllers
         //Retornar Processo por Numero
         [HttpGet("{NumeroProcesso}")]
 
-        public async Task<ActionResult<Processos>> GetProcesso(int NumeroProcesso)
+        public async Task<ActionResult<Processos>> GetProcesso(string NumeroProcesso)
         {
-            var processo = await _context.Processos.FindAsync(NumeroProcesso);
+            if (_context.Processos == null)
+            {
+                return NotFound();
+            }
+            var processo = await _context.Processos.FirstOrDefaultAsync(p => p.NumeroProcesso == NumeroProcesso);
 
+            if (processo == null)
+            {
+                return NotFound();
+            }
             return processo;
         }
 
         //Adicionar Novo Processo
         [HttpPost]
         public async Task<ActionResult<Processos>> PostProcesso(Processos processo)
+
         {
+            if (_context.Processos == null)
+            {
+                return Problem("Erro ao criar processo, contate o suporte");
+            
+            }
+            
+            if (!ModelState.IsValid) 
+            {
+                return BadRequest(ModelState);
+            
+            
+            }
             _context.Processos.Add(processo);
             await _context.SaveChangesAsync();
 
@@ -52,9 +77,25 @@ namespace GestorProcessos.Controllers
         //Alterar Informações Processo
         [HttpPut("{NumeroProcesso}")]
 
-        public async Task<ActionResult<Processos>> PutProcesso(int NumeroProcesso, Processos processo)
+        public async Task<ActionResult<Processos>> PutProcesso(string NumeroProcesso, Processos processo)
         {
-            _context.Processos.Update(processo);
+            if (NumeroProcesso != processo.NumeroProcesso) return BadRequest();
+
+            if (!ModelState.IsValid) return ValidationProblem(ModelState);
+
+            var processoExistente = await _context.Processos.FirstOrDefaultAsync(p => p.NumeroProcesso == NumeroProcesso);
+
+            if (processoExistente == null)
+            {
+                return NotFound();
+            
+            
+            }
+            processoExistente.Autor = processo.Autor;
+            processoExistente.Reu = processo.Reu;
+            processoExistente.DataCadastro = processo.DataCadastro;
+
+            _context.Processos.Update(processoExistente);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -66,9 +107,14 @@ namespace GestorProcessos.Controllers
 
         [HttpDelete("{NumeroProcesso}")]
 
-        public async Task<ActionResult> DeleteProcesso(int NumeroProcesso)
+        public async Task<ActionResult> DeleteProcesso(string NumeroProcesso)
         {
-            var processo = await _context.Processos.FindAsync(NumeroProcesso);
+            var processo = await _context.Processos.FirstOrDefaultAsync (p => p.NumeroProcesso == NumeroProcesso);
+
+            if (processo == null)
+            {
+                return NotFound(); 
+            }
 
             _context.Processos.Remove(processo);
             await _context.SaveChangesAsync();
