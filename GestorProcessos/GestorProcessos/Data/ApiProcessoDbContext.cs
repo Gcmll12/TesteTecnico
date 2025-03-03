@@ -1,4 +1,4 @@
-﻿using GestorProcessos.Models;
+﻿using GestorProcessosApi.Shared.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace GestorProcessos.Data

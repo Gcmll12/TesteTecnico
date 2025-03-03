@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[GestorProcessos.Models.Processos, GestorProcessos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GestorProcessosApi.Shared.Models.Processos, GestorProcessosApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -29,13 +29,13 @@
     "Parameters": [
       {
         "Name": "processo",
-        "Type": "GestorProcessos.Models.Processos",
+        "Type": "GestorProcessosApi.Shared.Models.Processos",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "GestorProcessos.Models.Processos",
+        "Type": "GestorProcessosApi.Shared.Models.Processos",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -61,7 +61,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "GestorProcessos.Models.Processos",
+        "Type": "GestorProcessosApi.Shared.Models.Processos",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -86,13 +86,13 @@
       },
       {
         "Name": "processo",
-        "Type": "GestorProcessos.Models.Processos",
+        "Type": "GestorProcessosApi.Shared.Models.Processos",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "GestorProcessos.Models.Processos",
+        "Type": "GestorProcessosApi.Shared.Models.Processos",
         "MediaTypes": [
           "text/plain",
           "application/json",

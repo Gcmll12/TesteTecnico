@@ -170,3 +170,6 @@ E:\Teste Técnico\GestorProcessos\GestorProcessos\bin\Debug\net8.0\runtimes\win\
 E:\Teste Técnico\GestorProcessos\GestorProcessos\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 E:\Teste Técnico\GestorProcessos\GestorProcessos\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 E:\Teste Técnico\GestorProcessos\GestorProcessos\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\Teste Técnico\GestorProcessos\GestorProcessos\obj\Debug\net8.0\GestorProcessos.sourcelink.json
+E:\Teste Técnico\GestorProcessos\GestorProcessos\bin\Debug\net8.0\GestorProcessosApi.dll
+E:\Teste Técnico\GestorProcessos\GestorProcessos\bin\Debug\net8.0\GestorProcessosApi.pdb

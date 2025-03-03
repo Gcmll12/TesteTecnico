@@ -1,8 +1,9 @@
-﻿using GestorProcessos.Models;
+﻿
 using Microsoft.AspNetCore.Mvc;
 using GestorProcessos.Data;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection.Metadata.Ecma335;
+
+using GestorProcessosApi.Shared.Models;
 
 namespace GestorProcessos.Controllers
 {

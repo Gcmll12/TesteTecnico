@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestorProcessos", "GestorProcessos\GestorProcessos.csproj", "{C53B5BD9-DDF9-48FD-AC7A-C8059D9DF064}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMovimentacoesProcessos", "ApiMovimentacoesProcessos\ApiMovimentacoesProcessos.csproj", "{66102D10-2554-4A80-9A64-A22FE50391F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestorProcessosApi", "GestorProcessosApi\GestorProcessosApi.csproj", "{17CE96ED-A053-4C50-BA3D-F25B97CDE865}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{C53B5BD9-DDF9-48FD-AC7A-C8059D9DF064}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C53B5BD9-DDF9-48FD-AC7A-C8059D9DF064}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C53B5BD9-DDF9-48FD-AC7A-C8059D9DF064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66102D10-2554-4A80-9A64-A22FE50391F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66102D10-2554-4A80-9A64-A22FE50391F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66102D10-2554-4A80-9A64-A22FE50391F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66102D10-2554-4A80-9A64-A22FE50391F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17CE96ED-A053-4C50-BA3D-F25B97CDE865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17CE96ED-A053-4C50-BA3D-F25B97CDE865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17CE96ED-A053-4C50-BA3D-F25B97CDE865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17CE96ED-A053-4C50-BA3D-F25B97CDE865}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

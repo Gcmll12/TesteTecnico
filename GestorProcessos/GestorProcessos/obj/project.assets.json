@@ -1695,6 +1695,16 @@
             "rid": "win"
           }
         }
+      },
+      "GestorProcessosApi/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GestorProcessosApi.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GestorProcessosApi.dll": {}
+        }
       }
     }
   },
@@ -5159,10 +5169,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "GestorProcessosApi/1.0.0": {
+      "type": "project",
+      "path": "../GestorProcessosApi/GestorProcessosApi.csproj",
+      "msbuildProject": "../GestorProcessosApi/GestorProcessosApi.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "GestorProcessosApi >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.2",
@@ -5201,7 +5217,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Teste Técnico\\GestorProcessos\\GestorProcessosApi\\GestorProcessosApi.csproj": {
+              "projectPath": "E:\\Teste Técnico\\GestorProcessos\\GestorProcessosApi\\GestorProcessosApi.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

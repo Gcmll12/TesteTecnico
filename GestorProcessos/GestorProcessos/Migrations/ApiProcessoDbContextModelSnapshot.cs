@@ -47,7 +47,7 @@ namespace GestorProcessos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Processos");
+                    b.ToTable("Processos", (string)null);
                 });
 #pragma warning restore 612, 618
         }
