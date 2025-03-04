@@ -1088,6 +1088,9 @@
         }
       },
       "GestorProcessosApi/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.2"
+        },
         "runtime": {
           "GestorProcessosApi.dll": {
             "assemblyVersion": "1.0.0.0",

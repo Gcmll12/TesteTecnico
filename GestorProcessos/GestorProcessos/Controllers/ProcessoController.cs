@@ -30,7 +30,7 @@ namespace GestorProcessos.Controllers
                 return NotFound();
             }
 
-            return await _context.Processos.ToListAsync();
+            return await _context.Processos.AsNoTracking().ToListAsync();
         }
 
         //Retornar Processo por Numero
@@ -42,7 +42,7 @@ namespace GestorProcessos.Controllers
             {
                 return NotFound();
             }
-            var processo = await _context.Processos.FirstOrDefaultAsync(p => p.NumeroProcesso == NumeroProcesso);
+            var processo = await _context.Processos.AsNoTracking().FirstOrDefaultAsync(p => p.NumeroProcesso == NumeroProcesso);
 
             if (processo == null)
             {

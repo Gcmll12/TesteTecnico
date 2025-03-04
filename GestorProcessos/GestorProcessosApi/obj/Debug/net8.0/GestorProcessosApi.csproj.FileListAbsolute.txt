@@ -10,3 +10,6 @@ E:\Teste Técnico\GestorProcessos\GestorProcessosApi\obj\Debug\net8.0\GestorProc
 E:\Teste Técnico\GestorProcessos\GestorProcessosApi\obj\Debug\net8.0\refint\GestorProcessosApi.dll
 E:\Teste Técnico\GestorProcessos\GestorProcessosApi\obj\Debug\net8.0\GestorProcessosApi.pdb
 E:\Teste Técnico\GestorProcessos\GestorProcessosApi\obj\Debug\net8.0\ref\GestorProcessosApi.dll
+E:\Teste Técnico\GestorProcessos\GestorProcessosApi\bin\Debug\net8.0\GestorProcessosApi.runtimeconfig.json
+E:\Teste Técnico\GestorProcessos\GestorProcessosApi\obj\Debug\net8.0\GestorProcessosApi.csproj.AssemblyReference.cache
+E:\Teste Técnico\GestorProcessos\GestorProcessosApi\obj\Debug\net8.0\GestorProcessosApi.genruntimeconfig.cache

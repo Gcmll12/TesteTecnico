@@ -1,4 +1,5 @@
 ﻿using ApiMovimentacoesProcessos.Data;
+
 using GestorProcessosApi.Shared.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -22,22 +23,31 @@ namespace ApiMovimentacoesProcessos.Controllers
 
         }
 
+
+
         //Listar Todas Movimentações Processo
 
         [HttpGet]
 
-        public async Task<ActionResult<IEnumerable<Movimentacoes>>> GetMovimentacoes()
+        public async Task<ActionResult<IEnumerable<Movimentacoes>>> GetMovimentacoes(string NumeroProcesso)
         
         
         {
             if (_context.Movimentacoes == null)
             {
                 return NotFound();
-            
-            
             }
 
-            return await _context.Movimentacoes.ToListAsync();
+            var movimentacao = await _context.Movimentacoes.AsNoTracking().Where(m => m.NumeroProcesso == NumeroProcesso).ToListAsync();
+
+            if (movimentacao == null)
+            {
+                return NotFound();
+
+            
+            }
+            return Ok (movimentacao);
+
         }
 
 
@@ -61,6 +71,7 @@ namespace ApiMovimentacoesProcessos.Controllers
 
 
             }
+
             _context.Movimentacoes.Add(movimentacoes);
             await _context.SaveChangesAsync();
             return NoContent();

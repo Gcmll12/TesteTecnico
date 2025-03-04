@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "ApiMovimentacoesProcessos.Controllers.MovimentacaoController",
+    "Method": "GetMovimentacoes",
+    "RelativePath": "api/Movimentacao",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NumeroProcesso",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GestorProcessosApi.Shared.Models.Movimentacoes, GestorProcessosApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiMovimentacoesProcessos.Controllers.MovimentacaoController",
+    "Method": "PostMovimentacoes",
+    "RelativePath": "api/Movimentacao",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "movimentacoes",
+        "Type": "GestorProcessosApi.Shared.Models.Movimentacoes",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestorProcessosApi.Shared.Models.Movimentacoes",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

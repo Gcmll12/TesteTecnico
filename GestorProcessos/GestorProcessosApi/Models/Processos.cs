@@ -13,6 +13,7 @@ namespace GestorProcessosApi.Shared.Models
         [Key]
         public int Id { get; set; }
 
+        
         public required string NumeroProcesso { get; set; }
 
         public required string Autor { get; set; }
@@ -21,7 +22,8 @@ namespace GestorProcessosApi.Shared.Models
 
         public required DateOnly DataCadastro { get; set; }
 
-        public ICollection<Movimentacoes>? Movimentacoes { get; set; }
+        //public ICollection<Movimentacoes> Movimentacoes { get; set; } = new List<Movimentacoes>();
+
 
 
 

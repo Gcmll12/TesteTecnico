@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiMovimentacoesProcessos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b5e75d457d1f24db2a1d249cb6060588c73f99e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b72ce702736ac8262b57306abd3ad53a965c9ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiMovimentacoesProcessos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiMovimentacoesProcessos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -12,7 +12,19 @@ namespace ApiMovimentacoesProcessos.Data
     {
 
     }
-    public DbSet<Movimentacoes> Movimentacoes { get; set; }
 
-}
+       /* protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Configuração do relacionamento entre Movimentacoes e Processos
+            modelBuilder.Entity<Movimentacoes>()
+                .HasOne(m => m.Processo)
+                .WithMany(p => p.Movimentacoes)
+                .HasForeignKey(m => m.NumeroProcesso)
+                .HasPrincipalKey(p => p.NumeroProcesso);
+        }*/
+        public DbSet<Movimentacoes> Movimentacoes { get; set; }
+
+       
+
+    }
 }

@@ -207,36 +207,6 @@
   },
   "components": {
     "schemas": {
-      "Movimentacoes": {
-        "required": [
-          "dataMovimentacao",
-          "descricao",
-          "numeroProcesso"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "descricao": {
-            "type": "string",
-            "nullable": true
-          },
-          "dataMovimentacao": {
-            "type": "string",
-            "format": "date"
-          },
-          "numeroProcesso": {
-            "type": "string",
-            "nullable": true
-          },
-          "processo": {
-            "$ref": "#/components/schemas/Processos"
-          }
-        },
-        "additionalProperties": false
-      },
       "Processos": {
         "required": [
           "autor",
@@ -265,13 +235,6 @@
           "dataCadastro": {
             "type": "string",
             "format": "date"
-          },
-          "movimentacoes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Movimentacoes"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false

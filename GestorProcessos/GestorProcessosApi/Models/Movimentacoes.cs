@@ -18,11 +18,11 @@ namespace GestorProcessosApi.Shared.Models
         public required DateOnly DataMovimentacao { get; set; }
 
         [ForeignKey("Processos")]
-        public required string NumeroProcesso { get; set; }
+        public required string NumeroProcesso{ get; set; }
 
 
+       // public Processos? Processo { get; set; }
 
-        public Processos? Processo { get; set; }
 
     }
 }
