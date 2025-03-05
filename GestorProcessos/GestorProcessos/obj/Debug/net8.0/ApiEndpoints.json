@@ -2,7 +2,7 @@
   {
     "ContainingType": "GestorProcessos.Controllers.ProcessoController",
     "Method": "GetProcessos",
-    "RelativePath": "(api/Processo)",
+    "RelativePath": "(api/Processo",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -22,7 +22,7 @@
   {
     "ContainingType": "GestorProcessos.Controllers.ProcessoController",
     "Method": "PostProcesso",
-    "RelativePath": "(api/Processo)",
+    "RelativePath": "(api/Processo",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -48,7 +48,7 @@
   {
     "ContainingType": "GestorProcessos.Controllers.ProcessoController",
     "Method": "GetProcesso",
-    "RelativePath": "(api/Processo)/{NumeroProcesso}",
+    "RelativePath": "(api/Processo/{NumeroProcesso}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -74,7 +74,7 @@
   {
     "ContainingType": "GestorProcessos.Controllers.ProcessoController",
     "Method": "PutProcesso",
-    "RelativePath": "(api/Processo)/{NumeroProcesso}",
+    "RelativePath": "(api/Processo/{NumeroProcesso}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -105,7 +105,7 @@
   {
     "ContainingType": "GestorProcessos.Controllers.ProcessoController",
     "Method": "DeleteProcesso",
-    "RelativePath": "(api/Processo)/{NumeroProcesso}",
+    "RelativePath": "(api/Processo/{NumeroProcesso}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "GestorProcessos\\GestorProcessos.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ApiMovimentacoesProcessos\\ApiMovimentacoesProcessos.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "FormsApi\\FormsApi.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

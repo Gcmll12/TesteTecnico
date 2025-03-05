@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/(api/Processo)": {
+    "/(api/Processo": {
       "get": {
         "tags": [
           "Processo"
@@ -89,7 +89,7 @@
         }
       }
     },
-    "/(api/Processo)/{NumeroProcesso}": {
+    "/(api/Processo/{NumeroProcesso}": {
       "get": {
         "tags": [
           "Processo"

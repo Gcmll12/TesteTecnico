@@ -9,6 +9,7 @@ E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\Api
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\Azure.Core.dll
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\Azure.Identity.dll
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\Humanizer.dll
+E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\System.Net.Http.Formatting.dll
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\Microsoft.Build.Locator.dll
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -45,6 +46,8 @@ E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\Mic
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -166,10 +169,10 @@ E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\obj\Debug\net8.0\sta
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApiMovimentacoesProcessos.props
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiMovimentacoesProcessos.props
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\obj\Debug\net8.0\staticwebassets.pack.json
-E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\obj\Debug\net8.0\ApiMovim.2D7E2E07.Up2Date
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\obj\Debug\net8.0\ApiMovimentacoesProcessos.dll
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\obj\Debug\net8.0\refint\ApiMovimentacoesProcessos.dll
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\obj\Debug\net8.0\ApiMovimentacoesProcessos.pdb
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\obj\Debug\net8.0\ApiMovimentacoesProcessos.genruntimeconfig.cache
 E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\obj\Debug\net8.0\ref\ApiMovimentacoesProcessos.dll
+E:\Teste Técnico\GestorProcessos\ApiMovimentacoesProcessos\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

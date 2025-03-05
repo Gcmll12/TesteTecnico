@@ -4,19 +4,23 @@ using GestorProcessos.Data;
 using Microsoft.EntityFrameworkCore;
 
 using GestorProcessosApi.Shared.Models;
+using Azure;
+
 
 namespace GestorProcessos.Controllers
 {
     [ApiController]
-    [Route("(api/[controller])")]
+    [Route("(api/[controller]")]
     public class ProcessoController : ControllerBase
 
     { private readonly ApiProcessoDbContext _context;
+        private readonly HttpClient _httpClient;
 
-        public ProcessoController(ApiProcessoDbContext context)
+        public ProcessoController(ApiProcessoDbContext context, HttpClient httpClient)
         {
             _context = context;
-
+            
+            _httpClient = httpClient;
         }
 
 
@@ -44,9 +48,11 @@ namespace GestorProcessos.Controllers
             }
             var processo = await _context.Processos.AsNoTracking().FirstOrDefaultAsync(p => p.NumeroProcesso == NumeroProcesso);
 
+           
+
             if (processo == null)
             {
-                return NotFound();
+                return NotFound("Processo inexistente, ou número incorreto");
             }
             return processo;
         }
@@ -117,10 +123,33 @@ namespace GestorProcessos.Controllers
                 return NotFound(); 
             }
 
-            _context.Processos.Remove(processo);
-            await _context.SaveChangesAsync();
+            try
+            {
+                
+                string url = $"https://localhost:7088/api/movimentacao/{NumeroProcesso}";
 
-            return NoContent();
+                
+                var response = await _httpClient.DeleteAsync(url);
+
+               
+                if (!response.IsSuccessStatusCode && response.StatusCode != System.Net.HttpStatusCode.NotFound)
+                {
+                    return BadRequest("Erro ao excluir as movimentações.");
+                }
+
+
+                _context.Processos.Remove(processo);
+                await _context.SaveChangesAsync();
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro interno ao excluir o processo: {ex.Message}");
+            }
+
+
+           
 
 
         }

@@ -97,6 +97,28 @@
           }
         }
       }
+    },
+    "/api/Movimentacao/{NumeroProcesso}": {
+      "delete": {
+        "tags": [
+          "Movimentacao"
+        ],
+        "parameters": [
+          {
+            "name": "NumeroProcesso",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

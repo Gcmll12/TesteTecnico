@@ -30,9 +30,12 @@ namespace ApiMovimentacoesProcessos.Controllers
         [HttpGet]
 
         public async Task<ActionResult<IEnumerable<Movimentacoes>>> GetMovimentacoes(string NumeroProcesso)
-        
-        
+
+
         {
+
+            if (string.IsNullOrWhiteSpace(NumeroProcesso)) return BadRequest();
+
             if (_context.Movimentacoes == null)
             {
                 return NotFound();
@@ -40,13 +43,13 @@ namespace ApiMovimentacoesProcessos.Controllers
 
             var movimentacao = await _context.Movimentacoes.AsNoTracking().Where(m => m.NumeroProcesso == NumeroProcesso).ToListAsync();
 
-            if (movimentacao == null)
+            if (!movimentacao.Any())
             {
-                return NotFound();
+                return NotFound("Não há movimentações no processo, ou o número está incorreto");
 
-            
+
             }
-            return Ok (movimentacao);
+            return Ok(movimentacao);
 
         }
 
@@ -74,11 +77,30 @@ namespace ApiMovimentacoesProcessos.Controllers
 
             _context.Movimentacoes.Add(movimentacoes);
             await _context.SaveChangesAsync();
+            return CreatedAtAction(nameof(PostMovimentacoes), new { movimentacoes = movimentacoes.NumeroProcesso }, movimentacoes);
+
+        }
+        [HttpDelete("{NumeroProcesso}")]
+
+        public async Task<ActionResult> DeleteMovimentacoes(string NumeroProcesso)
+        {
+            var movimentacoes = await _context.Movimentacoes.Where(m => m.NumeroProcesso == NumeroProcesso).ToListAsync();
+
+            if (!movimentacoes.Any())
+            {
+                return NotFound("Nenhuma movimentação encontrada para este processo.");
+            }
+
+            _context.Movimentacoes.RemoveRange(movimentacoes);
+            await _context.SaveChangesAsync();
+
             return NoContent();
 
         }
 
-
-
     }
+
 }
+
+    
+

@@ -50,5 +50,21 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "ApiMovimentacoesProcessos.Controllers.MovimentacaoController",
+    "Method": "DeleteMovimentacoes",
+    "RelativePath": "api/Movimentacao/{NumeroProcesso}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NumeroProcesso",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
