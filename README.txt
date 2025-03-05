@@ -11,6 +11,8 @@ listar todas as movimentações de um processo pelo seu número, adicionar novas
 e também possui um endpoint de delete que é chamado pela Api de processos, pois quando se deseja excluir um 
 processo suas movimentações também são excluídas.
 
+As models estão na biblioteca de classes compartilhadas "GestorProcessosApi" para melhor referência.
+
 Tecnologias usadas:
 
 Linguagem: C# e Sql(Apenas consultas verificatórias no bando de dados)
