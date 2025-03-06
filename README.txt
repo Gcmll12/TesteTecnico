@@ -12,7 +12,7 @@ e também possui um endpoint de delete que é chamado pela Api de processos, poi
 processo suas movimentações também são excluídas.
 
 **As models estão na biblioteca de classes compartilhadas "GestorProcessosApi" para melhor referência.
-**A confuguração final de chave estrangeira foi feita diretamente no banco de dados.
+**A configuração final de chave estrangeira foi feita diretamente no banco de dados.
 
 Tecnologias usadas:
 
