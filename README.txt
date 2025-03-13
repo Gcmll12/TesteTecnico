@@ -1,18 +1,16 @@
 
 Descrição do projeto:
 
-Par de Apis que gerenciam processos judiciais, a primeira é responsável pelo CRUD dos processos,
+Par de Apis que gerenciam processos judiciais, uma é responsável pelo CRUD dos processos,
 aonde é possível; listar todos os processos, postar um novo projeto, buscar um processo pelo seu número,
 atualizar informações de um processo existente e deletar processos do banco de dados
 juntamente com suas movimentações. 
-A segunda é responsavel por gerenciar as movimentações dos processos, sendo vinculada aos processos pelo
+A outra é responsavel por gerenciar as movimentações dos processos, sendo vinculada aos processos pelo
 número de cada um deles, que é usado como chave estrangeira no banco de dados. Nos endpoints da Api é possível
-listar todas as movimentações de um processo pelo seu número, adicionar novas movimentações,
-e também possui um endpoint de delete que é chamado pela Api de processos, pois quando se deseja excluir um 
-processo suas movimentações também são excluídas.
+listar todas as movimentações de um processo pelo seu número e adicionar novas movimentações.
 
-**As models estão na biblioteca de classes compartilhadas "GestorProcessosApi" para melhor referência.
-**A configuração final de chave estrangeira foi feita diretamente no banco de dados.
+
+
 
 Tecnologias usadas:
 
@@ -33,9 +31,9 @@ Um processo possui: 	Id tipo int, autoincremento
 
 
 Uma movimentação possui: 	Id tipo int, autoincremento
-				Descrição da movimentação, tipo string
-				Data da movimentação, tipo Data
-				Numero do processo, chave estrangeira
+			Descrição da movimentação, tipo string
+			Data da movimentação, tipo Data
+			Numero do processo, chave estrangeira
 
 
 Instruções para uso dos Endpoints:

@@ -1,6 +1,0 @@
-@GestorProcessos_HostAddress = http://localhost:5129
-
-GET {{GestorProcessos_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
