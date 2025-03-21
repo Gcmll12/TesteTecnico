@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "ApiProcessos.Controllers.AuthenticationController",
+    "Method": "Login",
+    "RelativePath": "api/conta/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioLogin",
+        "Type": "ApiProcessos.Models.UsuarioLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiProcessos.Controllers.AuthenticationController",
+    "Method": "Registrar",
+    "RelativePath": "api/conta/registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioRegistrado",
+        "Type": "ApiProcessos.Models.UsuariosRegistrados",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ApiProcessos.Controllers.MovimentacoesController",
     "Method": "GetMovimentacoes",
     "RelativePath": "apiMovimentacoes/Movimentacoes",
